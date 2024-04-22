@@ -7,11 +7,11 @@ from flask_mail import Mail, Message
 app = Flask(__name__)
 
 # SMTP Configuration
-app.config['MAIL_SERVER'] = 'smtp.slonjohswe.tech'
+app.config['MAIL_SERVER'] = 'smtp@mail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'mail@slonjohswe.tech'
-app.config['MAIL_PASSWORD'] = 'kqQz@!)9'
+app.config['MAIL_USERNAME'] = 'Username'
+app.config['MAIL_PASSWORD'] = 'password'
 
 mail = Mail(app)
 
