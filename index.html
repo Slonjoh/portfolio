@@ -531,7 +531,9 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <!-- Static Contact Info Block -->
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+	      <!-- CSRF Token -->
+	      <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
