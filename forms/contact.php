@@ -1,10 +1,4 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -42,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Contact email address where messages will be sent
-    $receiving_email_address = 'besttec1997@gmail.com'; // Change to your email address
+    $receiving_email_address = 'example@mail.com'; // Change to your email address
 
     // Initialize PHP_Email_Form library
     if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
